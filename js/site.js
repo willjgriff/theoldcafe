@@ -51,7 +51,7 @@ $(function() {
 
 // Google Map
 function initialize() {
-	var location = new google.maps.LatLng(51.528108, -0.050540)
+	var location = new google.maps.LatLng(51.514967, -0.129925)
 
 	var style_array = [
     {
