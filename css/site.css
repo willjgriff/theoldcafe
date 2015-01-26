@@ -1,0 +1,558 @@
+/* ===========================
+--- Global jazz
+============================ */
+body {
+    width: 100%;
+    height: 100%;
+	font-size: 100%;
+    font-family: Abel, Marvel,"Helvetica Neue",Arial,Helvetica,sans-serif; 
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2 {
+    margin: 0 0 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h3 {
+    margin: 0 0 30px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+h4,
+h5,
+h6 {
+    margin: 0 0 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 19px;
+    line-height: 1.5;
+	font-weight: normal;
+}
+
+@media(min-width:992px) {
+    p {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+}
+
+a {
+    color: #cc8833;
+    transition: all 0.25s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #eb6;
+}
+
+/* ===========================
+--- Navigation Bar Section
+============================ */
+.icon-bar {
+	background-color: #444;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    text-transform: uppercase;
+	font-size: 2em;
+	/* Mini navbar colour */
+    background-color: #cc8833;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 600;
+	font-size: 1.2em;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom a {
+	/* Text font colour */
+    color: #222;
+}
+
+.navbar-custom .nav li a {
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .navbar-toggle,
+/* Use above selector to change mini navbar button */
+.navbar-custom .nav li.active,
+/* Use above selector to change just main navbar hover colour; */
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a.active {
+	/* Navbar individual link hover colour */
+    background-color: #d0a050;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 15px 0;
+        border-bottom: 0;
+        letter-spacing: 2px;
+		/* Main top bar colour */
+        background: rgba(0,0,0,0);
+        transition: background .25s ease-in-out,padding .25s ease-in-out;
+    }
+
+	.navbar-custom a {
+		/* Text font colour */
+		color: #FFF;
+	}
+	
+	.navbar-custom img {
+		-webkit-filter: invert(100%);
+	}
+	
+	.navbar-custom .nav li a:hover,
+	.navbar-custom .nav li a:focus,
+	.navbar-custom .nav li a.active {
+		background-color: #b72;
+		transition: background .25s ease-in-out;
+	}
+	
+    .top-nav-collapse {
+        padding: 0;
+		/* Scrolled bar colour */
+        background-color: #cc8833;
+		color: #222
+    }
+	
+	.top-nav-collapse a {
+		color: #222;
+	}		
+	
+	.top-nav-collapse img {
+		-webkit-filter: invert(0%);
+	}
+
+	.top-nav-collapse .nav li a:hover,
+	.top-nav-collapse .nav li a:focus,
+	.top-nav-collapse .nav li a.active {
+		background-color: #d0a050;
+	}
+}
+
+/* ===========================
+--- Intro section
+============================ */
+.intro {
+    display: table;
+    width: 100%;
+    padding: 100px 0;
+    color: #fff;
+    background:	linear-gradient(to bottom, rgba(225,140,50,0.6) 100%, rgba(221,221,221,0.6) 0%),
+				url(../images/store_inside2.jpg) no-repeat center scroll;
+    background-color: #fff;
+ background-size: cover;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 4em;
+	font-weight: 600;
+	letter-spacing: 0.15em;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 1.8em;
+}
+
+.intro .intro-arrow {
+	-webkit-filter: invert(100%);
+	filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="1 0" /><feFuncG type="table" tableValues="1 0" /><feFuncB type="table" tableValues="1 0" /></feComponentTransfer></filter></svg>#filter');
+	-webkit-filter: invert(100%);
+	        filter: invert(100%);
+}
+
+.intro {
+    height: auto;
+    padding-top: 60px;
+	padding-bottom: 20px;
+    text-align: center;
+}
+
+@media(min-width:767px) {
+    .intro  {
+		height: 100%;
+	}
+	
+	.intro {
+        padding: 70px 0;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 25px;
+    }
+}
+
+/* ===========================
+--- About section
+============================ */
+.about-section {
+    height: auto;
+    padding-top: 60px;
+	padding-bottom: 20px;
+    text-align: center;
+	background: #EEE;
+}
+
+.about-section .details {
+	padding-bottom: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.about-section .details h3 {
+	font-weight: bold;
+	margin: 0;
+}
+
+@media(min-width:767px) {	
+ 	.about-section {
+		min-height: auto;
+		padding-top: 70px;
+		padding-bottom: 60px;
+		margin-top: 0px;
+    }
+	
+	.about-section .details {
+		position: relative;
+		height: 281px;
+		max-width: 3000px;
+	}
+	
+	.about-section .details-inner {
+		padding: 0px;
+		position: absolute;               
+		top: 50%; 
+		left: 50%;
+		margin: 0px;
+		margin-right: -50%;
+		-webkit-transform: translate(-50%, -50%);
+		        transform: translate(-50%, -50%);
+	}
+}
+
+/* About section carousel
+============================ */
+.about-section .slider-image1 {
+	background: radial-gradient(rgba(200, 200, 200,0.2) 100%, rgba(200, 200, 200, 0.3) 100%),
+				url(../images/carousel/food1.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.about-section .slider-image2 {
+	background: radial-gradient(rgba(230,255,255,0.1) 100%, rgba(204,255,255,0.7) 100%),
+				url(../images/carousel/food2.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.about-section .slider-image3 {
+	background: radial-gradient(rgba(230,255,255,0.1) 100%, rgba(204,255,255,0.7) 100%),
+				url(../images/carousel/food3.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.about-section .carousel-size {
+	max-width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.about-section .image-size {
+	height: 250px;
+	width: 100%;
+}
+
+.carousel-control.left, 
+.carousel-control.right {
+    background-image: none
+}
+
+.carousel .carousel-control { 
+	opacity: 1; 
+	filter: alpha(opacity=100);
+}
+
+.carousel:hover .carousel-control { 
+	opacity: 1; 
+	filter: alpha(opacity=100);
+	visibility: visible; 
+	transition-delay: 0s;
+}
+
+.about-section  .chevron-image {
+	-webkit-filter: invert(100%);
+	width: 17px;
+}
+
+.about-section .carousel-dots {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+@media(min-width:767px) {
+	.carousel .carousel-control { 
+		opacity: 0; 
+		filter: alpha(opacity=0);
+	}
+
+	.about-section .carousel-size {
+		max-width: 3000px;
+	}
+
+	.about-section .image-size {
+		height: 281px;
+		width: 100%;
+	}
+}
+@media(min-width:992px) {
+	.about-section .details,
+	.about-section .image-size {
+		height: 300px;
+	}
+}
+@media(min-width:1200px) {
+	.about-section .details,
+	.about-section .image-size {
+		height: 340px;
+	}
+}
+
+/* ===========================
+--- Events section
+============================ */
+.events-section {
+    background: #DDD;
+    height: auto;
+    padding-top: 60px;
+	padding-bottom: 0px;
+    text-align: center;
+} 
+
+.events-section .thumbnail {
+	background-color: #bbb;
+	max-width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.events-section .event-img {
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+}
+
+.events-section .event-img:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	cursor: pointer;
+	cursor: hand;
+}
+
+@media(min-width:767px) {	
+	.events-section {
+		height: auto;
+		padding-top: 70px;
+		padding-bottom: 60px;
+	}
+	
+	.events-section .thumbnail {
+		max-width: 3000px;
+	}
+}
+
+/* Events section modal
+============================ */
+body.modal-open { 
+	overflow:inherit; 
+	padding-right:inherit !important; 
+}
+
+.modal .modal-body {
+	background-color: #999;
+	padding: 0;
+}
+
+.modal .carousel-inner {
+	padding: 20px 20px 0px;
+}
+
+.modal .chevron-image {
+	-webkit-filter: invert(100%);
+	width: 17px;
+}
+
+.item .modal-image  {
+	background: #999;
+	border: 0;
+	padding: 0;
+}
+
+/* ===========================
+--- Contact section
+============================ */
+.contact-section {
+	height: auto;
+    padding-top: 60px;
+	padding-bottom: 0px;
+    text-align: center;
+	background: #EEE;
+}  
+
+.contact-section .details-address {
+	padding-bottom: 20px;
+}
+
+.contact-section .details-time {
+	padding: 20px;
+}
+	
+.contact-section .wrap-email {
+	display: inline-block;
+}
+
+.contact-section .contact-image {
+	background: linear-gradient(rgba(200, 200, 200,0.1) 100%, rgba(200, 200, 200, 0.3) 100%),
+				url(../images/store_front.jpg) no-repeat center scroll;
+	background-size: cover;
+	height: 220px;
+}
+
+#map-canvas {
+	height: 220px;
+}
+
+@media(min-width:767px) {
+	.contact-section{
+		height: auto;
+		padding-top: 70px;
+		padding-bottom: 20px;
+	}
+
+	.contact-section .contact-top {
+		padding-bottom: 30px;
+	}
+	
+	.contact-section .details-inner {
+		padding: 0px;
+		position: absolute;               
+		top: 50%; 
+		left: 50%;
+		margin: 5px;
+		margin-right: -50%;
+		-webkit-transform: translate(-50%, -50%);
+		        transform: translate(-50%, -50%);
+	}
+	
+	.contact-section .contact-image {
+		height: 300px
+	}
+	
+	.contact-section .contact-body {
+		height: 300px;
+		position: relative;
+	}
+	
+	#map-canvas {
+		height: 300px;
+		position: relative;
+	}
+}
+
+/* ===========================
+--- Crazy CSS for intro page down arrow
+============================ */
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {    
+    0 {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+/* ===========================
+--- Footer section
+============================ */
+footer {
+	padding: 20px 0;
+	font-size: 1.3em;
+	background-color: #DDD;
+}
+
+footer p {
+	margin: 0;
+	font-size: 1em;
+}
