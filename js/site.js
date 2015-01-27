@@ -44,7 +44,7 @@ $(function() {
 		
         $('html, body').stop().animate({
 			scrollTop: page_top
-        }, 1200, 'easeInOutExpo');
+        }, 1400, 'easeInOutExpo');
         event.preventDefault();
     });
 });
