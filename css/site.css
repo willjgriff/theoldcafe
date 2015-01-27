@@ -5,7 +5,8 @@ body {
     width: 100%;
     height: 100%;
 	font-size: 100%;
-    font-family: Abel, Marvel,"Helvetica Neue",Arial,Helvetica,sans-serif; 
+    font-family: Gudea;
+	/* "Helvetica Neue",Arial,Helvetica,sans-serif;  */
 }
 
 html {
@@ -15,13 +16,13 @@ html {
 
 h1,
 h2 {
-    margin: 0 0 15px;
-    font-weight: bold;
+    margin: 0 0 10px;
+    font-weight: normal;
     letter-spacing: 1px;
 }
 
 h3 {
-    margin: 0 0 30px;
+    margin: 0 0 20px;
     font-weight: normal;
     letter-spacing: 1px;
 }
@@ -29,20 +30,20 @@ h3 {
 h4,
 h5,
 h6 {
-    margin: 0 0 10px;
-    font-weight: bold;
+    margin: 0 0 8px;
+    font-weight: normal;
     letter-spacing: 1px;
 }
 
 p {
-    font-size: 19px;
+    font-size: 17px;
     line-height: 1.5;
 	font-weight: normal;
 }
 
 @media(min-width:992px) {
     p {
-        font-size: 22px;
+        font-size: 18px;
         line-height: 1.4;
     }
 }
@@ -67,15 +68,15 @@ a:focus {
 
 .navbar-custom {
     margin-bottom: 0;
-    text-transform: uppercase;
-	font-size: 2em;
+    /* text-transform: uppercase; */
+	font-size: 1.6em;
 	/* Mini navbar colour */
     background-color: #cc8833;
 }
 
 .navbar-custom .navbar-brand {
-    font-weight: 600;
-	font-size: 1.2em;
+    font-weight: normal;
+	font-size: 1.35em;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -109,7 +110,7 @@ a:focus {
         letter-spacing: 2px;
 		/* Main top bar colour */
         background: rgba(0,0,0,0);
-        transition: background .25s ease-in-out,padding .25s ease-in-out;
+        transition: background .35s ease-in-out,padding .35s ease-in-out;
     }
 
 	.navbar-custom a {
@@ -158,7 +159,7 @@ a:focus {
     width: 100%;
     padding: 100px 0;
     color: #fff;
-    background:	linear-gradient(to bottom, rgba(150,100,50,0.6) 100%, rgba(221,221,221,0.6) 0%),
+    background:	linear-gradient(to bottom, rgba(110,70,30,0.6) 100%, rgba(221,221,221,0.6) 0%),
 				url(../images/store_inside2.jpg) no-repeat center scroll;
     background-color: #fff;
  background-size: cover;
@@ -229,7 +230,7 @@ a:focus {
 }
 
 .about-section .details h3 {
-	font-weight: bold;
+	font-weight: normal;
 	margin: 0;
 }
 
