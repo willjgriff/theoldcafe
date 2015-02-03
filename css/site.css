@@ -21,13 +21,13 @@ h2 {
     letter-spacing: 1px;
 }
 
-h3 {
+h3,
+h4 {
     margin: 0 0 20px;
     letter-spacing: 2px;
-	font-size: 2.2em;
+	font-size: 1.8em;
 }
 
-h4,
 h5,
 h6 {
     margin: 0 0 8px;
@@ -39,28 +39,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.5;
 	letter-spacing: 1px;
-	font-family: Goudy Bookletter 1911;
+	font-family: sans-serif, Raleway, Goudy Bookletter 1911;
 }
 
 @media(min-width:992px) {
     p {
         font-size: 18px;
         line-height: 1.4;
+		font-family: Goudy Bookletter 1911;
     }
 }
 
 a {
-    color: #cc8833;
+    color: #fff;
     transition: all 0.25s ease-in-out;
 }
 
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #eb6;
+    color: #000;
 }
 
 /* ===========================
@@ -75,7 +76,7 @@ a:focus {
     /* text-transform: uppercase; */
 	font-size: 1.6em;
 	/* Mini navbar colour */
-    background-color: #cc8833;
+    background-color: #ddd;
 }
 
 .navbar-custom .navbar-brand {
@@ -104,7 +105,7 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
 	/* Navbar individual link hover colour */
-    background-color: #d0a050;
+    background-color: #333;
 }
 
 @media(min-width:767px) {
@@ -119,7 +120,7 @@ a:focus {
 
 	.navbar-custom a {
 		/* Text font colour */
-		color: #FFF;
+		color: #ddd;
 	}
 	
 	.navbar-custom img {
@@ -129,19 +130,19 @@ a:focus {
 	.navbar-custom .nav li a:hover,
 	.navbar-custom .nav li a:focus,
 	.navbar-custom .nav li a.active {
-		background-color: #b72;
+		background-color: #555;
 		transition: background .25s ease-in-out;
 	}
 	
     .top-nav-collapse {
         padding: 0;
 		/* Scrolled bar colour */
-        background-color: #cc8833;
+        background-color: #555;
 		color: #222
     }
 	
 	.top-nav-collapse a {
-		color: #222;
+		color: #fff;
 	}		
 	
 	.top-nav-collapse img {
@@ -151,7 +152,7 @@ a:focus {
 	.top-nav-collapse .nav li a:hover,
 	.top-nav-collapse .nav li a:focus,
 	.top-nav-collapse .nav li a.active {
-		background-color: #d0a050;
+		background-color: #333;
 	}
 }
 
@@ -163,7 +164,7 @@ a:focus {
     width: 100%;
     padding: 100px 0;
     color: #fff;
-    background:	linear-gradient(to bottom, rgba(110,70,30,0.6) 100%, rgba(221,221,221,0.6) 0%),
+    background:	linear-gradient(to bottom, rgba(50,50,50,0.6) 100%, rgba(221,221,221,0.6) 0%),
 				url(../images/store_inside2.jpg) no-repeat center scroll;
     background-color: #fff;
 	background-size: cover;
@@ -268,19 +269,19 @@ a:focus {
 /* About section carousel
 ============================ */
 .about-section .slider-image1 {
-	background: radial-gradient(rgba(200, 200, 200,0.2) 100%, rgba(200, 200, 200, 0.3) 100%),
+	background: radial-gradient(rgba(150, 150, 150,0.3) 100%, rgba(200, 200, 200, 0.3) 100%),
 				url(../images/carousel/food1.jpg) no-repeat center;
 	background-size: cover;
 }
 
 .about-section .slider-image2 {
-	background: radial-gradient(rgba(230,255,255,0.1) 100%, rgba(204,255,255,0.7) 100%),
+	background: radial-gradient(rgba(150, 150, 150, 0.3) 100%, rgba(204,255,255,0.7) 100%),
 				url(../images/carousel/food2.jpg) no-repeat center;
 	background-size: cover;
 }
 
 .about-section .slider-image3 {
-	background: radial-gradient(rgba(230,255,255,0.1) 100%, rgba(204,255,255,0.7) 100%),
+	background: radial-gradient(rgba(150, 150, 150, 0.3) 100%, rgba(204,255,255,0.7) 100%),
 				url(../images/carousel/food3.jpg) no-repeat center;
 	background-size: cover;
 }

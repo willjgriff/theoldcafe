@@ -56,8 +56,9 @@ function initialize() {
 	var style_array = [
     {
       stylers: [
-        { hue: "#cc8833" },
-		{ gamma: 0.8 }
+        { hue: "#cc1111" },
+		{ gamma: 0.8 },
+		{ saturation: -100 }
       ]
     },{
       featureType: "road",
